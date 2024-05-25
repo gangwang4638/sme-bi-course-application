@@ -1,40 +1,39 @@
 # Virtual Machine (VM) Exercises
 
-## :information_source: Read this before getting started
-- The two exercises should not replicate the exact actions shown in your screencast. The goal of exercises is for learners to apply what was learned in the screencasts to new problems or situations. This is best pedagogical practice for retaining and building skills. For example, this can be done by using another dataset between screencasts and exercises or focusing on a different portion of the dataset.
-- Power BI / Tableau specific: We can only run free versions of BI software in our virtual machine exercises. In the case of Power BI, make sure the exercises can run on [Power BI Desktop](https://powerbi.microsoft.com/en-us/desktop/) without any additional paid products. 
-- Unsure what the scope of an exercise should be? Here's an [example](https://campus.datacamp.com/courses/introduction-to-power-bi/getting-started-with-power-bi?ex=14) from Introduction to Power BI. The first chapter of most DataCamp courses are free, so take a look at our [BI courses](https://learn.datacamp.com/courses?technologies=Tableau&technologies=Power%20BI) to get a feel for how we assess and guide learners.
+
 
 ## 1st VM Exercise
 
 #### Dataset
 
-- [ ] Add datasets used to the `datasets/` folder
+- [x] Add datasets used to the `datasets/` folder - This exercise is using the internal Databricks sample dataset samples.nyctaxi.trips
 
 #### Files
 
-- [ ] **Initial**: Add file to the `exercises/`  folder with the name `ex-1-intial.twbx` or `ex-1-intial.pbix` or `ex-1-initial.yxmd`, depending if you are auditioning for a Tableau/Power BI/Alteryx course.
-- [ ] **Solution**: Add file to the `exercises/`  folder with the name `ex-1-sol.twbx` or `ex-1-sol.pbix` or `ex-1-sol.yxmd`
+- [x] **Initial**: Add file to the `exercises/`  folder with the name `ex-1-initial.sql`. 
+- [x] **Solution**: Add file to the `exercises/`  folder with the name `ex-1-sol.lvdash.json`.
 
 #### Learning Objective
 
-*One measurable learning objective that this exercise assesses*
+*Create a new dashboard by combining visulizations*
 
 #### Context
 
-*3 - 4 sentence description of why it’s important to learn how to do this task (linking back to the learning objective). Explain how this would be used in a real-life situation. Why is it useful, what problem does it solve?*
+*Learning to create a Databricks dashboard is crucial as it equips you with the ability to visualize and interpret complex data efficiently. This skill is integral to data-driven decision-making, enabling you to derive actionable insights from large datasets. In real-life scenarios, a Databricks dashboard can track key performance indicators (KPIs) and monitor important metrics in real time. This practical tool helps in identifying patterns, optimizing processes, and ultimately driving strategic initiatives with data-backed evidence.*
 
 #### Steps to be executed by the student (max 6)
 
 *Each bulleted instruction is a complete sentence that describes a specific task.*
 
-- Step 1
-- Step 2
-- Step 3
-- ...
+- Step 1: Run the provided query in Databricks "SQL Editor".
+- Step 2: Create a scatter plot visualization named "Daily Fare Trends" with "trip_distance" as the x-axis and "fare_amount" as the y-axis.
+- Step 3: Create a counter plot named "Total Trips" using "Count rows" as the target value.
+- Step 4: Add both visualizations to a new dashboard named "Trips".
+- Step 5: Change the dot color to red in the "Daily Fare Trends" widget in your dashboard.
+
 
 #### Exercise question:
-*This is a question presented to learners to check if the steps above were properly completed. It can be a multiple choice question or a question with a 1-3 word answer. It is often not possible to check if all the steps are completed, in this case; the priority is to check that the learner meets the learning objective.*
+*Question: What is the total trips count displayed on the dashboard? Answer: 20.69K*
 
 #### End goal:
 
@@ -44,32 +43,33 @@
 
 #### Dataset
 
-- [ ] Add datasets used to the `datasets/` folder
+- [x] Add datasets used to the `datasets/` folder - This exercise is using the internal Databricks sample dataset samples.nyctaxi.trips
 
 #### Files
 
-- [ ] **Initial**: Add file to the `exercises/`  folder with the name `ex-2-intial.twbx` or `ex-1-initial.yxmd`, depending if you are auditioning for a Tableau/Power BI/Alteryx course.
-- [ ] **Solution**: Add file to the `exercises/`  folder with the name `ex-2-sol.twbx` or `ex-2-sol.pbix` or `ex-1-sol.yxmd`
+- [x] **Initial**: Add file to the `exercises/`  folder with the name `ex-2-intial.lvdash.json`.
+- [x] **Solution**: Add file to the `exercises/`  folder with the name `ex-2-sol.lvdash.json`.
 
 #### Learning Objective
 
-*One measurable learning objective that this exercise assesses*
+*Edit the dashboard*
 
 #### Context
 
-*3 - 4 sentence description of why it’s important to learn how to do this task (linking back to the learning objective). Explain how this would be used in a real-life situation. Why is it useful, what problem does it solve?*
+*Learning how to edit Databricks dashboards is essential for efficiently organizing and presenting data insights. Being proficient in tasks such as moving, resizing, adding, and deleting widgets empowers individuals to customize dashboards according to specific analytical needs and audience preferences. By effectively managing widgets, users can highlight key metrics, streamline data visualization workflows, and ultimately facilitate better decision-making processes based on actionable insights derived from the data.*
 
 #### Steps to be executed by the student (max 6)
 
 *Each bulleted instruction is a complete sentence that describes a specific task.*
 
-- Step 1
-- Step 2
-- Step 3
-- ...
+- Step 1: Remove the widgets "Total Trips" and "Route Revenue Attribution".
+- Step 2: Re-position the widget "Daily Fare Trends" to the bottom of the dashboard.
+- Step 3: Resize the widget "Daily Fare Trends" to fill the dashboard horizontally.
+- Step 4: Update the axis labels of "Daily Fare Trends" to display "Trip Distance (miles)" and "Fare Amount (USD)".
+- Step 5: Include a Markdown style "Heading 1" description "NYC Taxi Trip Analysis" at the top of the dashboard.
 
 #### Exercise question:
-*This is a question presented to learners to check if the steps above were properly completed. It can be a multiple choice question or a question with a 1-3 word answer. It is often not possible to check if all the steps are completed, in this case; the priority is to check that the learner meets the learning objective.*
+*Question: From the dashboard, what is the highest daily fare amount recorded in February 2016? Answer: 45*
 
 #### End goal:
 
