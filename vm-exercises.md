@@ -37,7 +37,8 @@
 
 #### End goal:
 
-*Add an image of the final visualization here.*
+![title](Images/ex1_screenshot.PNG)
+
 
 ## 2nd VM Exercise
 
@@ -73,5 +74,6 @@
 
 #### End goal:
 
-*Add an image of the final visualization here.*
+![title](Images/ex2_screenshot.PNG)
+
 
